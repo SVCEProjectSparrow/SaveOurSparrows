@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivityRespective">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@color/bgsnowwhite"
+                android:visibility="gone"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/map_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"></com.google.android.gms.maps.MapView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/boxid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:fontFamily="@font/helveticafonts"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"
+                            android:textColor="@color/bgsnowwhite"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+
+                        <TextView
+                            android:id="@+id/landmark"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/locations"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/adoptby"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/adoptname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+
+
+                        <TextView
+                            android:id="@+id/ownername"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:background="@color/bgsnowwhite"
+                            android:fontFamily="@font/helveticafonts"
+                            android:padding="5dp"
+                            android:textColor="@android:color/black"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/paydetails"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="PAYMENT DETAILS"
+                            android:textColor="@color/colorblue"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                        <TextView
+                            android:id="@+id/paymentid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="15dp"
+                            android:layout_weight="1"
+                            android:background="@color/black"
+                            android:fontFamily="@font/helveticafonts"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:scaleType="fitXY"
+                            android:textColor="@color/bgsnowwhite"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/orderid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/bgsnowwhite"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/helveticafonts"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/bgsnowwhite"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/helveticafonts"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/processstatus"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/bgsnowwhite"
+                            android:textColor="@android:color/black"
+                            android:fontFamily="@font/helveticafonts"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/appointmentdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/bgsnowwhite"
+                            android:textColor="@android:color/black"
+                            android:visibility="gone"
+                            android:fontFamily="@font/helveticafonts"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/boxfixdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="5dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@color/bgsnowwhite"
+                            android:textColor="@android:color/black"
+                            android:visibility="gone"
+                            android:fontFamily="@font/helveticafonts"
+                            android:textSize="18sp" />
+
+                        <com.github.vipulasri.timelineview.TimelineView
+                            android:id="@+id/timeline"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            app:markerSize="20dp"
+                            app:lineWidth="2dp"
+                            android:visibility="gone"
+                            app:startLineColor="@color/colorPrimary"
+                            app:endLineColor="@color/colorPrimary"
+                            app:linePadding="5dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

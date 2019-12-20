@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_getStarted"
+            android:icon="@drawable/ic_pages_black_24dp"
+            android:title="Get Started" />
+
+        <item
+            android:id="@+id/nav_sparrows"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Sparrow Locations" />
+
+        <item
+            android:id="@+id/nav_sparrowReport"
+            android:icon="@drawable/ic_photo_album_black_24dp"
+            android:title="Sparrow Reports" />
+
+        <item
+            android:id="@+id/nav_sparrowBox"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Sparrow Box" />
+
+        <item
+            android:id="@+id/nav_buyBox"
+            android:icon="@drawable/ic_payment_black_24dp"
+            android:title="Adopt Sparrow" />
+        <item
+            android:id="@+id/nav_ourTeam"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Our Team" />
+        <!--<item-->
+            <!--android:id="@+id/nav_manage"-->
+            <!--android:icon="@drawable/ic_menu_manage"-->
+            <!--android:title="Tools" />-->
+    </group>
+
+    <!--<item android:title="Communicate">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/nav_share"-->
+                <!--android:icon="@drawable/ic_menu_share"-->
+                <!--android:title="Share" />-->
+            <!--<item-->
+                <!--android:id="@+id/nav_send"-->
+                <!--android:icon="@drawable/ic_menu_send"-->
+                <!--android:title="Send" />-->
+        <!--</menu>-->
+    <!--</item>-->
+
+</menu>

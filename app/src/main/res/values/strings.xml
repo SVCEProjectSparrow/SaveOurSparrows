@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Save Our Sparrows</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Know me well!</string>
+    <string name="slide_1_desc">Learn to differentiate me from my mate!</string>
+
+    <string name="slide_2_title">I am not alone!</string>
+    <string name="slide_2_desc">I am always seen in pairs. So look for my love too!</string>
+
+    <string name="slide_3_title">What do you think I am doing?</string>
+    <string name="slide_3_desc">I am not idle. Record my behavior accordingly!</string>
+
+    <string name="slide_4_title">You are almost done!</string>
+    <string name="slide_4_desc">Thank You very much for spotting me!</string>
+    <string name="title_activity_main">Save Our Sparrows</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_viewProfile">View Profile</string>
+    <string name="action_logout">Logout</string>
+
+    <string name="hint_name">Fullname</string>
+    <string name="hint_username">Email ID</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_cpassword"> Confirm Password</string>
+    <string name="hint_currentpassword">Current Password</string>
+    <string name="hint_newpassword">New Password</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="lbl_gender">Gender</string>
+    <string name="lbl_sparrowsgender">Sparrow\'s Gender</string>
+    <string name="lbl_dob">Date of Birth</string>
+    <string name="hint_city">City</string>
+    <string name="hint_district">District</string>
+    <string name="hint_state">State</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">CREATE ACCOUNT</string>
+    <string name="btn_link_to_register">Dont Have Account?Register!</string>
+    <string name="btn_forgot_password">Forgot Your Password?</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_back"><![CDATA[<< Back]]></string>
+    <string name="btn_sign_out">Sign Out</string>
+    <string name="btn_sendverify">Send Verification code</string>
+    <string name="btn_sendverifymail">Send Verification Mail</string>
+    <string name="btn_accepttnc">Accept</string>
+    <string name="btn_submit">SUBMIT</string>
+    <string name="btn_payment">START PAYMENT</string>
+    <string name="btn_share">SHARE</string>
+    <string name="btn_transdetails">View Adopt Details</string>
+    <string name="lbl_verifymail">Account not verified. Verify your account!</string>
+    <string name="lbl_changepassword">Change Password</string>
+    <string name="hintchangepassword">Change Your Password?</string>
+    <string name="forgot_password_msg">We just need your registered Email Id to sent you password reset instructions.</string>
+    <string name="mail_senderemail">sparrowapppro@gmail.com</string>
+    <string name="mail_senderemailpassword">ProSparrowSvce1379@Hod</string>
+    <string name="title_activity_sparrow_box_maps">Map</string>
+    <string name="title_activity_sparrow_analyse_maps">Map</string>
+    <string name="adopting_a_nest_box">Adopting a Nest Box</string>
+
+
+</resources>

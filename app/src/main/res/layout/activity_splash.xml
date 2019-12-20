@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgsnowwhite"
+    android:layout_gravity="center"
+    android:id="@+id/splashlayout"
+    tools:context=".SplashActivity">
+
+
+    <!--<com.facebook.shimmer.ShimmerFrameLayout-->
+        <!--android:id="@+id/shimmer_view_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--app:shimmer_auto_start="true"-->
+        <!--app:shimmer_repeat_count="1">-->
+    <!--</com.facebook.shimmer.ShimmerFrameLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/splashimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:foregroundGravity="center"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logosplash" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:drawable="@color/bgsnowwhite"/>
+
+    <item
+        android:right="100dp"
+        android:left="100dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/logosplash">
+        </bitmap>
+    </item>
+
+</layer-list>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardlayout"
+    tools:context=".GetStarted">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bgsnowwhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="4dp"
+        android:visibility="gone"
+        app:cardElevation="@dimen/_10sdp">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_horizontal_margin">
+            <TextView
+                android:id="@+id/started"
+                android:padding="5dp"
+                android:fontFamily="@font/helveticafonts"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/adopt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adopting a Nest Box"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/adoptnest"
+                android:padding="5dp"
+                android:fontFamily="@font/helveticafonts"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/sparrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sparrow Images"
+                android:padding="5dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/male"
+                android:padding="5dp"
+                android:fontFamily="@font/helveticafonts"
+                android:textSize="18sp"
+                android:text="Male"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/maleimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_row="18"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/imagebuttonbackground"
+                android:elevation="2dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sparrow_male" />
+
+            <TextView
+                android:id="@+id/female"
+                android:padding="5dp"
+                android:fontFamily="@font/helveticafonts"
+                android:textSize="18sp"
+                android:text="Female"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <android.support.v7.widget.AppCompatImageButton
+                android:id="@+id/femaleimage"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_row="18"
+                android:layout_column="0"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/imagebuttonbackground"
+                android:elevation="2dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/sparrow_female" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/bgsnowwhite">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_margin="15dp"
+                app:cardCornerRadius="4dp"
+                app:cardElevation="@dimen/_10sdp">
+
+                <GridLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center"
+                    android:padding="@dimen/activity_horizontal_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="1"
+                        android:layout_column="0"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="20dp"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:paddingLeft="5dp"
+                        android:text="REPORT SECTION"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="30sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:layout_row="4"
+                        android:layout_column="0"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="5dp"
+                        android:padding="10dp">
+
+
+                        <TextView
+                            android:id="@+id/gendertext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/lbl_sparrowsgender"
+                            android:layout_gravity="center_vertical"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/gendergroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="vertical"
+                            tools:ignore="RtlHardcoded">
+                            <RadioButton
+                                android:id="@+id/unknown"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:checked="true"
+                                android:text="Not Known"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                            <RadioButton
+                                android:id="@+id/male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="Male"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                            <RadioButton
+                                android:id="@+id/female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="Female"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="5"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="Are you in Sparrow's Location"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+                        <RadioGroup
+                            android:id="@+id/locationgroup"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+                        <RadioButton
+                            android:id="@+id/locyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="Yes"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <RadioButton
+                            android:id="@+id/locno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="NO"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            android:checked="true"
+                            android:layout_marginLeft="55dp"
+                            tools:ignore="HardcodedText" />
+                        </RadioGroup>
+
+
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/addrtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Specific Street Address"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/street"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="7"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="Street"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <EditText
+                        android:id="@+id/area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="8"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="Area"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <EditText
+                        android:id="@+id/city"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="9"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="@string/hint_city"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <EditText
+                        android:id="@+id/state"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="10"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="@string/hint_state"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <EditText
+                        android:id="@+id/landmark"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="11"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="Landmark"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <LinearLayout
+                        android:id="@+id/numsparrowlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="12"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="0.5"
+                            android:paddingLeft="5dp"
+                            android:text="Number of Sparrows"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <Spinner
+                            android:id="@+id/numyng"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="1.5"
+                            android:background="#fbf8f8"
+                            android:textColor="@color/colorAccent"
+                            tools:ignore="HardcodedText,LabelFor" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="13"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="Sparrow's Nest Spotted"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/nestgroup"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="16"
+                            android:layout_column="0"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+
+                            <RadioButton
+                                android:id="@+id/nestyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="Yes"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                            <RadioButton
+                                android:id="@+id/nestno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="55dp"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="No"
+                                android:checked="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_row="14"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:paddingLeft="5dp"
+                            android:text="Has Sparrow Box been Provided"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="18sp" />
+
+                        <RadioGroup
+                            android:id="@+id/boxprovided"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_row="16"
+                            android:layout_column="0"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal"
+                            tools:ignore="RtlHardcoded">
+
+                            <RadioButton
+                                android:id="@+id/providedyes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="Yes"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+
+                            <RadioButton
+                                android:id="@+id/providedno"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="55dp"
+                                android:buttonTint="@color/colorPrimaryDark"
+                                android:text="No"
+                                android:checked="true"
+                                android:textColor="@color/colorAccent"
+                                android:textSize="18sp"
+                                tools:ignore="HardcodedText" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/boxtext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="15"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:text="Like to Request Sparrrow Box"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="18sp" />
+
+                    <RadioGroup
+                        android:id="@+id/boxgroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="16"
+                        android:layout_column="0"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded">
+
+                        <RadioButton
+                            android:id="@+id/requestyes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:checked="true"
+                            android:text="Yes"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+
+                        <RadioButton
+                            android:id="@+id/requestno"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="55dp"
+                            android:buttonTint="@color/colorPrimaryDark"
+                            android:text="No"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="18sp"
+                            tools:ignore="HardcodedText" />
+                    </RadioGroup>
+
+                    <EditText
+                        android:id="@+id/description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="17"
+                        android:layout_column="0"
+                        android:layout_marginBottom="10dp"
+                        android:drawableRight="@drawable/ic_star_black_24dp"
+                        android:hint="Short Description all about"
+                        android:inputType="textPersonName"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textColorHint="@color/btn_grey1" />
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/sparrowimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_row="18"
+                        android:layout_column="0"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/imagebuttonbackground"
+                        android:elevation="2dp"
+                        android:scaleType="center"
+                        app:srcCompat="@drawable/ic_photo_library_black_24dp" />
+
+
+                    <Button
+                        android:id="@+id/report"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_row="19"
+                        android:layout_column="0"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/background"
+                        android:text="Report"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        tools:ignore="SpUsage" />
+                </GridLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
