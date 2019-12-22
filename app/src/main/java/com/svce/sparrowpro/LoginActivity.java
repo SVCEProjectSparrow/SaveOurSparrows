@@ -54,7 +54,7 @@ public class LoginActivity extends AppCompatActivity {
 
     CardView cardView;
     EditText user,pass;
-    Button logbtn,regbtn;
+    Button logbtn,regbtn,logphn;
     FirebaseDatabase fdatabase;
     FirebaseAuth fauth;
     FirebaseUser fuser;
@@ -108,6 +108,7 @@ public class LoginActivity extends AppCompatActivity {
         pass=(EditText)findViewById(R.id.password);
         logbtn=(Button)findViewById(R.id.logbtn);
         regbtn=(Button)findViewById(R.id.regbtn);
+        logphn=(Button)findViewById(R.id.phoneno);
         forgotpass=findViewById(R.id.forgotpass);
         stringBuilder=new StringBuilder();
         vis=0;
@@ -148,6 +149,16 @@ public class LoginActivity extends AppCompatActivity {
                 }
             }
         });
+        logphn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(LoginActivity.this,LoginPhone.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.right_in,R.anim.left_out);
+                finish();
+            }
+        });
+
         logbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View view) {
